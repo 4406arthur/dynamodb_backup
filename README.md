@@ -8,11 +8,13 @@ extend (https://github.com/bchew/dynamodump) lib.
 
 requirement
 ---------
-1. python dependency (python2.7, boto2, boto3)
-2. setting aws acccess key, secret in ~/.boto
+1. git clone https://github.com/bchew/dynamodump
+2. python dependency (python2.7, boto2, boto3)
+3. setting aws acccess key, secret in ~/.boto
 
 Usage
 ---------------
+suggest use python virtualenv
 
 update your s3 info in sync.py
 
