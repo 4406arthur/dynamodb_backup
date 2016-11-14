@@ -3,7 +3,7 @@
 #first step dump dynamodb on s3
 
 
-python dynamodump/dynamodump.py -m backup -r ap-southeast-1 -s SAMPLE_TALBE
+python dynamodump/dynamodump.py -m backup -r ap-southeast-1 -s DEV
 
 #then sync the dump dir to s3
 
