@@ -1,5 +1,6 @@
 import boto3
 import os
+import datetime
 
 def sync_to_s3(target_dir, aws_region, bucket_name):
     if not os.path.isdir(target_dir):
@@ -11,10 +12,10 @@ def sync_to_s3(target_dir, aws_region, bucket_name):
         print('Found directory: %s' % dirName)
         for fname in fileList:
             print('\t%s' % fname)
-            s3.Object(bucket_name,dirName+'/'+fname).put(Body=open(os.path.join(dirName, fname), 'rb'))
+            s3.Object(bucket_name,dirName+'/'+fname+ '_' + datetime.datetime.today().strftime('%Y-%m-%d')).put(Body=open(os.path.join(dirName, fname), 'rb'))
 
 target_dir = 'dump/'
-aws_region = 'YOUR S3 INFO'
-bucket_name = 'YOUT S3 INFO'
+aws_region = 'ap-southeast-1'
+bucket_name = 'dynamodb-backup-201611'
 
 sync_to_s3(target_dir,aws_region,bucket_name )
