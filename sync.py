@@ -16,6 +16,6 @@ def sync_to_s3(target_dir, aws_region, bucket_name):
 
 target_dir = 'dump/'
 aws_region = 'ap-southeast-1'
-bucket_name = 'dynamodb-backup-201611'
+bucket_name = 'ddb-backup-ashqkybk8'
 
 sync_to_s3(target_dir,aws_region,bucket_name )
