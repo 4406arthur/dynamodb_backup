@@ -16,7 +16,7 @@ Setup
 
 If you need isolate python environment
 
-You should use (virtualenv)[https://virtualenv.pypa.io/en/stable/userguide/]
+You should use virtualenv https://virtualenv.pypa.io/en/stable/userguide/
 
 Install package dependency by pip
 
