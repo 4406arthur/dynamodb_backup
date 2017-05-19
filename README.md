@@ -11,21 +11,14 @@ requirement
 1. python dependency (python2.7, boto2, boto3)
 2. setting aws acccess key, secret in ~/.aws/credentials
 
-Setup (Recommend)
+Setup
 ---------------
 
-```
-pip install virtualenv
-```
+If you need isolate python environment
 
-Inside this project, initialize python virtualenv
+You should use (virtualenv)[https://virtualenv.pypa.io/en/stable/userguide/]
 
-```
-virtualenv venv
-source venv/bin/activate
-```
-
-you are now under venv and safe to install pip stuff.
+Install package dependency by pip
 
 ```
 pip install boto boto3
