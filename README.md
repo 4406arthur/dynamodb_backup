@@ -11,7 +11,7 @@ requirement
 1. python dependency (python2.7, boto2, boto3)
 2. setting aws acccess key, secret in ~/.aws/credentials
 
-Setup
+Setup (Recommend)
 ---------------
 
 ```
@@ -49,15 +49,6 @@ Restore
 
 ```
 python dynamodump/dynamodump.py -m restore -r REGION -s SRCTABLE -d DESTTABLE
-```
-
-Cleanup
----------------
-
-To leave virtualenv
-
-```
-deactivate
 ```
 
 
